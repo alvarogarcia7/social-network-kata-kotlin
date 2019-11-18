@@ -1,8 +1,8 @@
 package com.example.kata.social
 
-class SocialNetworkClient(console: MyConsole) {
+class SocialNetworkClient(val console: MyConsole) {
     fun command(rawCommand: String) {
-
+        console.println("alice (0s): hola mundo!")
     }
 
 }
