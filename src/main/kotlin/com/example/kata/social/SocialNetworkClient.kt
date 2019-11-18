@@ -9,7 +9,7 @@ class SocialNetworkClient(val console: MyConsole, val user: User) {
             user.publish(rest)
         } else {
             val timeline = user.getTimeline()
-            console.println("alice (0s): ${timeline.last()}")
+            console.println("${user.name} (0s): ${timeline.last()}")
         }
     }
 
