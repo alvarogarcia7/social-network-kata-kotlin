@@ -21,17 +21,6 @@ class SocialNetworkTest {
         assertThat("alice (0s): $message", Is.`is`(timeline[0]))
     }
 
-    @Test
-    fun `post another twit (in Polish!)`() {
-        val message = "hola mon!"
-        login(alice)
-
-        postTwit(message)
-
-        val timeline = readTimeline()
-        assertThat("alice (0s): $message", Is.`is`(timeline[0]))
-    }
-
     private fun login(user: User) {
 
     }
