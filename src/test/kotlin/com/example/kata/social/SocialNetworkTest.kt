@@ -26,7 +26,7 @@ class SocialNetworkTest {
     }
 
     private val console: InMemoryConsole = InMemoryConsole()
-    private val client: SocialNetworkClient = SocialNetworkClient(console)
+    private val client: SocialNetworkClient = SocialNetworkClient(console, alice)
 
     private fun readTimeline(): List<String> {
         client.command("timeline")
