@@ -1,8 +1,8 @@
 package com.example.kata.social
 
-class Timeline(private val values: MutableList<String> = mutableListOf()) {
+class Timeline(private val values: MutableList<Twit> = mutableListOf()) {
 
-    fun store(twit: String) = values.add(twit)
+    fun store(twit: Twit) = values.add(twit)
 
-    fun last(): String = values.last()
+    fun last(): Twit = values.last()
 }
